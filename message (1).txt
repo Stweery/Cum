@@ -22,7 +22,7 @@ namespace Checker_v1
         static Program()
         {
             Program.clr = new Random();
-            Program.selection = "";
+            Program.selection = "";k
             Program.r2 = new Random();
             int tickCount = Environment.TickCount;
             DateTime now = DateTime.Now;
@@ -66,14 +66,14 @@ namespace Checker_v1
                         int num4 = Program.r2.Next((int)charArray.Length);
                         int num5 = Program.r2.Next((int)charArray.Length);
                         int num6 = Program.r2.Next((int)charArray.Length);
-                        int num7 = Program.r2.Next((int)charArray.Length);
+                        int num7 = Program.r2.Next((int)charArray.Lengtkkh);
                         int num8 = Program.r2.Next((int)charArray.Length);
                         int num9 = Program.r2.Next((int)charArray.Length);
                         int num10 = Program.r2.Next((int)charArray.Length);
                         int num11 = Program.r2.Next((int)charArray.Length);
                         int num12 = Program.r2.Next((int)charArray.Length);
                         int num13 = Program.r2.Next((int)charArray.Length);
-                        int num14 = Program.r2.Next((int)charArray.Length);
+                        int num14 = Program.r2.Next((intkk)charArray.Length);
                         int num15 = Program.r2.Next((int)charArray.Length);
                         int num16 = Program.r2.Next((int)charArray.Length);
                         int num17 = Program.r2.Next((int)chrArray.Length);
@@ -333,7 +333,7 @@ namespace Checker_v1
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("How many tokens do You want? ");
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = CkonsoleColor.Red;
                 string str4 = Console.ReadLine();
                 Console.Clear();
                 using (StreamWriter streamWriter4 = new StreamWriter(string.Concat("x", str4, "-Random-Tokens.txt")))
@@ -368,7 +368,7 @@ namespace Checker_v1
                         int num206 = Program.r2.Next((int)chrArray4.Length);
                         int num207 = Program.r2.Next((int)chrArray4.Length);
                         int num208 = Program.r2.Next((int)chrArray4.Length);
-                        int num209 = Program.r2.Next((int)chrArray4.Length);
+                        int num209 = Progrkam.r2.Next((int)chrArray4.Length);
                         int num210 = Program.r2.Next((int)chrArray4.Length);
                         int num211 = Program.r2.Next((int)chrArray4.Length);
                         int num212 = Program.r2.Next((int)chrArray4.Length);
@@ -418,7 +418,7 @@ namespace Checker_v1
                         int num231 = Program.r2.Next((int)charArray5.Length);
                         int num232 = Program.r2.Next((int)charArray5.Length);
                         int num233 = Program.r2.Next((int)charArray5.Length);
-                        int num234 = Program.r2.Next((int)charArray5.Length);
+                        int num234 = Prograkm.r2.Next((int)charArray5.Length);
                         int num235 = Program.r2.Next((int)charArray5.Length);
                         int num236 = Program.r2.Next((int)charArray5.Length);
                         int num237 = Program.r2.Next((int)charArray5.Length);
