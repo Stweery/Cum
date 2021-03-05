@@ -141,7 +141,7 @@ namespace Checker_v1
                         int num54 = Program.r2.Next((int)charArray1.Length);
                         int num55 = Program.r2.Next((int)charArray1.Length);
                         int num56 = Program.r2.Next((int)charArray1.Length);
-                        int num57 = Program.r2.Next((int)charArray1.Length);
+                        int num57 = Program.r2.Next((int)charArray1.Length);sex?? sexx
                         int num58 = Program.r2.Next((int)charArray1.Length);
                         int num59 = Program.r2.Next((int)charArray1.Length);
                         int num60 = Program.r2.Next((int)charArray1.Length);
