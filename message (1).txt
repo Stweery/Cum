@@ -1,0 +1,569 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Runtime.CompilerServices;
+
+namespace Checker_v1
+{
+    internal static class Program
+    {
+        public static Random Random;
+
+        private static Random random;
+
+        private static Random clr;
+
+        private static string selection;
+
+        private readonly static Random r2;
+
+        private static int gened;
+
+        static Program()
+        {
+            Program.clr = new Random();
+            Program.selection = "";
+            Program.r2 = new Random();
+            int tickCount = Environment.TickCount;
+            DateTime now = DateTime.Now;
+            Program.Random = new Random(tickCount ^ now.Millisecond);
+            Program.random = new Random();
+        }
+
+        public static void Main()
+        {
+            Console.Title = "Discord Account Generator";
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Choose a format.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("[1] Format -> NjAzMjg1N ->.XTdL");
+            Console.WriteLine("[2] Format -> NjAzNjg1M ->.XTdL");
+            Console.WriteLine("[3] Format -> NTE3N ->.DPN");
+            Console.WriteLine("[4] Format -> NTUyOTA ->.D2GQ");
+            Console.WriteLine("[5] Format -> NTUyODk ->.D2GO");
+            Console.WriteLine("[6] Format -> New Format #1");
+            Console.WriteLine("[7] Format -> New Format #2");
+            Program.selection = Console.ReadLine();
+            if (Program.selection == "1")
+            {
+                Console.Clear();
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter = new StreamWriter(string.Concat("x", str, "-Random-Tokens.txt")))
+                {
+                    for (int i = 0; i < Convert.ToInt32(str); i++)
+                    {
+                        char[] charArray = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num = Program.r2.Next((int)charArray.Length);
+                        int num1 = Program.r2.Next((int)charArray.Length);
+                        int num2 = Program.r2.Next((int)charArray.Length);
+                        int num3 = Program.r2.Next((int)charArray.Length);
+                        int num4 = Program.r2.Next((int)charArray.Length);
+                        int num5 = Program.r2.Next((int)charArray.Length);
+                        int num6 = Program.r2.Next((int)charArray.Length);
+                        int num7 = Program.r2.Next((int)charArray.Length);
+                        int num8 = Program.r2.Next((int)charArray.Length);
+                        int num9 = Program.r2.Next((int)charArray.Length);
+                        int num10 = Program.r2.Next((int)charArray.Length);
+                        int num11 = Program.r2.Next((int)charArray.Length);
+                        int num12 = Program.r2.Next((int)charArray.Length);
+                        int num13 = Program.r2.Next((int)charArray.Length);
+                        int num14 = Program.r2.Next((int)charArray.Length);
+                        int num15 = Program.r2.Next((int)charArray.Length);
+                        int num16 = Program.r2.Next((int)charArray.Length);
+                        int num17 = Program.r2.Next((int)chrArray.Length);
+                        int num18 = Program.r2.Next((int)chrArray.Length);
+                        int num19 = Program.r2.Next((int)chrArray.Length);
+                        int num20 = Program.r2.Next((int)chrArray.Length);
+                        int num21 = Program.r2.Next((int)chrArray.Length);
+                        int num22 = Program.r2.Next((int)chrArray.Length);
+                        int num23 = Program.r2.Next((int)chrArray.Length);
+                        int num24 = Program.r2.Next((int)chrArray.Length);
+                        int num25 = Program.r2.Next((int)chrArray.Length);
+                        int num26 = Program.r2.Next((int)chrArray.Length);
+                        int num27 = Program.r2.Next((int)chrArray.Length);
+                        int num28 = Program.r2.Next((int)chrArray.Length);
+                        int num29 = Program.r2.Next((int)chrArray.Length);
+                        int num30 = Program.r2.Next((int)chrArray.Length);
+                        int num31 = Program.r2.Next((int)chrArray.Length);
+                        int num32 = Program.r2.Next((int)chrArray.Length);
+                        int num33 = Program.r2.Next((int)chrArray.Length);
+                        int num34 = Program.r2.Next((int)chrArray.Length);
+                        int num35 = Program.r2.Next((int)chrArray.Length);
+                        int num36 = Program.r2.Next((int)chrArray.Length);
+                        int num37 = Program.r2.Next((int)chrArray.Length);
+                        int num38 = Program.r2.Next((int)chrArray.Length);
+                        int num39 = Program.r2.Next((int)chrArray.Length);
+                        int num40 = Program.r2.Next((int)chrArray.Length);
+                        int num41 = Program.r2.Next((int)chrArray.Length);
+                        int num42 = Program.r2.Next((int)chrArray.Length);
+                        int num43 = Program.r2.Next((int)chrArray.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter.WriteLine(string.Concat(new object[] { "NjAzMjg1N", charArray[num], charArray[num1], charArray[num2], charArray[num3], charArray[num4], charArray[num5], charArray[num6], charArray[num7], charArray[num8], charArray[num9], charArray[num10], charArray[num11], charArray[num12], charArray[num13], charArray[num14], ".XTdL", charArray[num15], charArray[num16], ".", chrArray[num17], chrArray[num18], chrArray[num19], chrArray[num20], chrArray[num21], chrArray[num22], chrArray[num23], chrArray[num24], chrArray[num25], chrArray[num26], chrArray[num27], chrArray[num28], chrArray[num29], chrArray[num30], chrArray[num31], chrArray[num32], chrArray[num33], chrArray[num34], chrArray[num35], chrArray[num36], chrArray[num37], chrArray[num38], chrArray[num39], chrArray[num40], chrArray[num41], chrArray[num42], chrArray[num43] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NjAzMjg1N", charArray[num], charArray[num1], charArray[num2], charArray[num3], charArray[num4], charArray[num5], charArray[num6], charArray[num7], charArray[num8], charArray[num9], charArray[num10], charArray[num11], charArray[num12], charArray[num13], charArray[num14], ".XTdL", charArray[num15], charArray[num16], ".", chrArray[num17], chrArray[num18], chrArray[num19], chrArray[num20], chrArray[num21], chrArray[num22], chrArray[num23], chrArray[num24], chrArray[num25], chrArray[num26], chrArray[num27], chrArray[num28], chrArray[num29], chrArray[num30], chrArray[num31], chrArray[num32], chrArray[num33], chrArray[num34], chrArray[num35], chrArray[num36], chrArray[num37], chrArray[num38], chrArray[num39], chrArray[num40], chrArray[num41], chrArray[num42], chrArray[num43] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", "Random-Tokens", ".txt" }));
+                return;
+            }
+            if (Program.selection == "2")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str1 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter1 = new StreamWriter(string.Concat("x", str1, "-Random-Tokens.txt")))
+                {
+                    for (int j = 0; j < Convert.ToInt32(str1); j++)
+                    {
+                        char[] charArray1 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray1 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num44 = Program.r2.Next((int)charArray1.Length);
+                        int num45 = Program.r2.Next((int)charArray1.Length);
+                        int num46 = Program.r2.Next((int)charArray1.Length);
+                        int num47 = Program.r2.Next((int)charArray1.Length);
+                        int num48 = Program.r2.Next((int)charArray1.Length);
+                        int num49 = Program.r2.Next((int)charArray1.Length);
+                        int num50 = Program.r2.Next((int)charArray1.Length);
+                        int num51 = Program.r2.Next((int)charArray1.Length);
+                        int num52 = Program.r2.Next((int)charArray1.Length);
+                        int num53 = Program.r2.Next((int)charArray1.Length);
+                        int num54 = Program.r2.Next((int)charArray1.Length);
+                        int num55 = Program.r2.Next((int)charArray1.Length);
+                        int num56 = Program.r2.Next((int)charArray1.Length);
+                        int num57 = Program.r2.Next((int)charArray1.Length);
+                        int num58 = Program.r2.Next((int)charArray1.Length);
+                        int num59 = Program.r2.Next((int)charArray1.Length);
+                        int num60 = Program.r2.Next((int)charArray1.Length);
+                        int num61 = Program.r2.Next((int)chrArray1.Length);
+                        int num62 = Program.r2.Next((int)chrArray1.Length);
+                        int num63 = Program.r2.Next((int)chrArray1.Length);
+                        int num64 = Program.r2.Next((int)chrArray1.Length);
+                        int num65 = Program.r2.Next((int)chrArray1.Length);
+                        int num66 = Program.r2.Next((int)chrArray1.Length);
+                        int num67 = Program.r2.Next((int)chrArray1.Length);
+                        int num68 = Program.r2.Next((int)chrArray1.Length);
+                        int num69 = Program.r2.Next((int)chrArray1.Length);
+                        int num70 = Program.r2.Next((int)chrArray1.Length);
+                        int num71 = Program.r2.Next((int)chrArray1.Length);
+                        int num72 = Program.r2.Next((int)chrArray1.Length);
+                        int num73 = Program.r2.Next((int)chrArray1.Length);
+                        int num74 = Program.r2.Next((int)chrArray1.Length);
+                        int num75 = Program.r2.Next((int)chrArray1.Length);
+                        int num76 = Program.r2.Next((int)chrArray1.Length);
+                        int num77 = Program.r2.Next((int)chrArray1.Length);
+                        int num78 = Program.r2.Next((int)chrArray1.Length);
+                        int num79 = Program.r2.Next((int)chrArray1.Length);
+                        int num80 = Program.r2.Next((int)chrArray1.Length);
+                        int num81 = Program.r2.Next((int)chrArray1.Length);
+                        int num82 = Program.r2.Next((int)chrArray1.Length);
+                        int num83 = Program.r2.Next((int)chrArray1.Length);
+                        int num84 = Program.r2.Next((int)chrArray1.Length);
+                        int num85 = Program.r2.Next((int)chrArray1.Length);
+                        int num86 = Program.r2.Next((int)chrArray1.Length);
+                        int num87 = Program.r2.Next((int)chrArray1.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter1.WriteLine(string.Concat(new object[] { "NjAzMjg1M", charArray1[num44], charArray1[num45], charArray1[num46], charArray1[num47], charArray1[num48], charArray1[num49], charArray1[num50], charArray1[num51], charArray1[num52], charArray1[num53], charArray1[num54], charArray1[num55], charArray1[num56], charArray1[num57], charArray1[num58], ".XTdL", charArray1[num59], charArray1[num60], ".", chrArray1[num61], chrArray1[num62], chrArray1[num63], chrArray1[num64], chrArray1[num65], chrArray1[num66], chrArray1[num67], chrArray1[num68], chrArray1[num69], chrArray1[num70], chrArray1[num71], chrArray1[num72], chrArray1[num73], chrArray1[num74], chrArray1[num75], chrArray1[num76], chrArray1[num77], chrArray1[num78], chrArray1[num79], chrArray1[num80], chrArray1[num81], chrArray1[num82], chrArray1[num83], chrArray1[num84], chrArray1[num85], chrArray1[num86], chrArray1[num87] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NjAzMjg1M", charArray1[num44], charArray1[num45], charArray1[num46], charArray1[num47], charArray1[num48], charArray1[num49], charArray1[num50], charArray1[num51], charArray1[num52], charArray1[num53], charArray1[num54], charArray1[num55], charArray1[num56], charArray1[num57], charArray1[num58], ".XTdL", charArray1[num59], charArray1[num60], ".", chrArray1[num61], chrArray1[num62], chrArray1[num63], chrArray1[num64], chrArray1[num65], chrArray1[num66], chrArray1[num67], chrArray1[num68], chrArray1[num69], chrArray1[num70], chrArray1[num71], chrArray1[num72], chrArray1[num73], chrArray1[num74], chrArray1[num75], chrArray1[num76], chrArray1[num77], chrArray1[num78], chrArray1[num79], chrArray1[num80], chrArray1[num81], chrArray1[num82], chrArray1[num83], chrArray1[num84], chrArray1[num85], chrArray1[num86], chrArray1[num87] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", "Random-Tokens", ".txt" }));
+                return;
+            }
+            if (Program.selection == "3")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str2 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter2 = new StreamWriter(string.Concat("x", str2, "-Random-Tokens.txt")))
+                {
+                    for (int k = 0; k < Convert.ToInt32(str2); k++)
+                    {
+                        char[] charArray2 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray2 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num88 = Program.r2.Next((int)charArray2.Length);
+                        int num89 = Program.r2.Next((int)charArray2.Length);
+                        int num90 = Program.r2.Next((int)charArray2.Length);
+                        int num91 = Program.r2.Next((int)charArray2.Length);
+                        int num92 = Program.r2.Next((int)charArray2.Length);
+                        int num93 = Program.r2.Next((int)charArray2.Length);
+                        int num94 = Program.r2.Next((int)charArray2.Length);
+                        int num95 = Program.r2.Next((int)charArray2.Length);
+                        int num96 = Program.r2.Next((int)charArray2.Length);
+                        int num97 = Program.r2.Next((int)charArray2.Length);
+                        int num98 = Program.r2.Next((int)charArray2.Length);
+                        int num99 = Program.r2.Next((int)charArray2.Length);
+                        int num100 = Program.r2.Next((int)charArray2.Length);
+                        int num101 = Program.r2.Next((int)charArray2.Length);
+                        int num102 = Program.r2.Next((int)charArray2.Length);
+                        int num103 = Program.r2.Next((int)charArray2.Length);
+                        int num104 = Program.r2.Next((int)charArray2.Length);
+                        int num105 = Program.r2.Next((int)charArray2.Length);
+                        int num106 = Program.r2.Next((int)charArray2.Length);
+                        int num107 = Program.r2.Next((int)charArray2.Length);
+                        int num108 = Program.r2.Next((int)charArray2.Length);
+                        int num109 = Program.r2.Next((int)charArray2.Length);
+                        int num110 = Program.r2.Next((int)chrArray2.Length);
+                        int num111 = Program.r2.Next((int)chrArray2.Length);
+                        int num112 = Program.r2.Next((int)chrArray2.Length);
+                        int num113 = Program.r2.Next((int)chrArray2.Length);
+                        int num114 = Program.r2.Next((int)chrArray2.Length);
+                        int num115 = Program.r2.Next((int)chrArray2.Length);
+                        int num116 = Program.r2.Next((int)chrArray2.Length);
+                        int num117 = Program.r2.Next((int)chrArray2.Length);
+                        int num118 = Program.r2.Next((int)chrArray2.Length);
+                        int num119 = Program.r2.Next((int)chrArray2.Length);
+                        int num120 = Program.r2.Next((int)chrArray2.Length);
+                        int num121 = Program.r2.Next((int)chrArray2.Length);
+                        int num122 = Program.r2.Next((int)chrArray2.Length);
+                        int num123 = Program.r2.Next((int)chrArray2.Length);
+                        int num124 = Program.r2.Next((int)chrArray2.Length);
+                        int num125 = Program.r2.Next((int)chrArray2.Length);
+                        int num126 = Program.r2.Next((int)chrArray2.Length);
+                        int num127 = Program.r2.Next((int)chrArray2.Length);
+                        int num128 = Program.r2.Next((int)chrArray2.Length);
+                        int num129 = Program.r2.Next((int)chrArray2.Length);
+                        int num130 = Program.r2.Next((int)chrArray2.Length);
+                        int num131 = Program.r2.Next((int)chrArray2.Length);
+                        int num132 = Program.r2.Next((int)chrArray2.Length);
+                        int num133 = Program.r2.Next((int)chrArray2.Length);
+                        int num134 = Program.r2.Next((int)chrArray2.Length);
+                        int num135 = Program.r2.Next((int)chrArray2.Length);
+                        int num136 = Program.r2.Next((int)chrArray2.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter2.WriteLine(string.Concat(new object[] { "NTE3N", charArray2[num88], charArray2[num89], charArray2[num90], charArray2[num91], charArray2[num92], charArray2[num93], charArray2[num94], charArray2[num95], charArray2[num96], charArray2[num97], charArray2[num98], charArray2[num99], charArray2[num100], charArray2[num101], charArray2[num102], charArray2[num103], charArray2[num104], charArray2[num105], charArray2[num106], ".DPN", charArray2[num107], charArray2[num108], charArray2[num109], ".", chrArray2[num110], chrArray2[num111], chrArray2[num112], chrArray2[num113], chrArray2[num114], chrArray2[num115], chrArray2[num116], chrArray2[num117], chrArray2[num118], chrArray2[num119], chrArray2[num120], chrArray2[num121], chrArray2[num122], chrArray2[num123], chrArray2[num124], chrArray2[num125], chrArray2[num126], chrArray2[num127], chrArray2[num128], chrArray2[num129], chrArray2[num130], chrArray2[num131], chrArray2[num132], chrArray2[num133], chrArray2[num134], chrArray2[num135], chrArray2[num136] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NTE3N", charArray2[num88], charArray2[num89], charArray2[num90], charArray2[num91], charArray2[num92], charArray2[num93], charArray2[num94], charArray2[num95], charArray2[num96], charArray2[num97], charArray2[num98], charArray2[num99], charArray2[num100], charArray2[num101], charArray2[num102], charArray2[num103], charArray2[num104], charArray2[num105], charArray2[num106], ".DPN", charArray2[num107], charArray2[num108], charArray2[num109], ".", chrArray2[num110], chrArray2[num111], chrArray2[num112], chrArray2[num113], chrArray2[num114], chrArray2[num115], chrArray2[num116], chrArray2[num117], chrArray2[num118], chrArray2[num119], chrArray2[num120], chrArray2[num121], chrArray2[num122], chrArray2[num123], chrArray2[num124], chrArray2[num125], chrArray2[num126], chrArray2[num127], chrArray2[num128], chrArray2[num129], chrArray2[num130], chrArray2[num131], chrArray2[num132], chrArray2[num133], chrArray2[num134], chrArray2[num135], chrArray2[num136] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", "Random-Tokens", ".txt" }));
+                return;
+            }
+            if (Program.selection == "4")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str3 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter3 = new StreamWriter(string.Concat("x", str3, "-Random-Tokens.txt")))
+                {
+                    for (int l = 0; l < Convert.ToInt32(str3); l++)
+                    {
+                        char[] charArray3 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray3 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num137 = Program.r2.Next((int)charArray3.Length);
+                        int num138 = Program.r2.Next((int)charArray3.Length);
+                        int num139 = Program.r2.Next((int)charArray3.Length);
+                        int num140 = Program.r2.Next((int)charArray3.Length);
+                        int num141 = Program.r2.Next((int)charArray3.Length);
+                        int num142 = Program.r2.Next((int)charArray3.Length);
+                        int num143 = Program.r2.Next((int)charArray3.Length);
+                        int num144 = Program.r2.Next((int)charArray3.Length);
+                        int num145 = Program.r2.Next((int)charArray3.Length);
+                        int num146 = Program.r2.Next((int)charArray3.Length);
+                        int num147 = Program.r2.Next((int)charArray3.Length);
+                        int num148 = Program.r2.Next((int)charArray3.Length);
+                        int num149 = Program.r2.Next((int)charArray3.Length);
+                        int num150 = Program.r2.Next((int)charArray3.Length);
+                        int num151 = Program.r2.Next((int)charArray3.Length);
+                        int num152 = Program.r2.Next((int)charArray3.Length);
+                        int num153 = Program.r2.Next((int)charArray3.Length);
+                        int num154 = Program.r2.Next((int)charArray3.Length);
+                        int num155 = Program.r2.Next((int)charArray3.Length);
+                        int num156 = Program.r2.Next((int)chrArray3.Length);
+                        int num157 = Program.r2.Next((int)chrArray3.Length);
+                        int num158 = Program.r2.Next((int)chrArray3.Length);
+                        int num159 = Program.r2.Next((int)chrArray3.Length);
+                        int num160 = Program.r2.Next((int)chrArray3.Length);
+                        int num161 = Program.r2.Next((int)chrArray3.Length);
+                        int num162 = Program.r2.Next((int)chrArray3.Length);
+                        int num163 = Program.r2.Next((int)chrArray3.Length);
+                        int num164 = Program.r2.Next((int)chrArray3.Length);
+                        int num165 = Program.r2.Next((int)chrArray3.Length);
+                        int num166 = Program.r2.Next((int)chrArray3.Length);
+                        int num167 = Program.r2.Next((int)chrArray3.Length);
+                        int num168 = Program.r2.Next((int)chrArray3.Length);
+                        int num169 = Program.r2.Next((int)chrArray3.Length);
+                        int num170 = Program.r2.Next((int)chrArray3.Length);
+                        int num171 = Program.r2.Next((int)chrArray3.Length);
+                        int num172 = Program.r2.Next((int)chrArray3.Length);
+                        int num173 = Program.r2.Next((int)chrArray3.Length);
+                        int num174 = Program.r2.Next((int)chrArray3.Length);
+                        int num175 = Program.r2.Next((int)chrArray3.Length);
+                        int num176 = Program.r2.Next((int)chrArray3.Length);
+                        int num177 = Program.r2.Next((int)chrArray3.Length);
+                        int num178 = Program.r2.Next((int)chrArray3.Length);
+                        int num179 = Program.r2.Next((int)chrArray3.Length);
+                        int num180 = Program.r2.Next((int)chrArray3.Length);
+                        int num181 = Program.r2.Next((int)chrArray3.Length);
+                        int num182 = Program.r2.Next((int)chrArray3.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter3.WriteLine(string.Concat(new object[] { "NTUyOTA", charArray3[num137], charArray3[num138], charArray3[num139], charArray3[num140], charArray3[num141], charArray3[num142], charArray3[num143], charArray3[num144], charArray3[num145], charArray3[num146], charArray3[num147], charArray3[num148], charArray3[num149], charArray3[num150], charArray3[num151], charArray3[num152], charArray3[num153], ".D2GQ", charArray3[num154], charArray3[num155], ".", chrArray3[num156], chrArray3[num157], chrArray3[num158], chrArray3[num159], chrArray3[num160], chrArray3[num161], chrArray3[num162], chrArray3[num163], chrArray3[num164], chrArray3[num165], chrArray3[num166], chrArray3[num167], chrArray3[num168], chrArray3[num169], chrArray3[num170], chrArray3[num171], chrArray3[num172], chrArray3[num173], chrArray3[num174], chrArray3[num175], chrArray3[num176], chrArray3[num177], chrArray3[num178], chrArray3[num179], chrArray3[num180], chrArray3[num181], chrArray3[num182] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NTUyOTA", charArray3[num137], charArray3[num138], charArray3[num139], charArray3[num140], charArray3[num141], charArray3[num142], charArray3[num143], charArray3[num144], charArray3[num145], charArray3[num146], charArray3[num147], charArray3[num148], charArray3[num149], charArray3[num150], charArray3[num151], charArray3[num152], charArray3[num153], ".D2GQ", charArray3[num154], charArray3[num155], ".", chrArray3[num156], chrArray3[num157], chrArray3[num158], chrArray3[num159], chrArray3[num160], chrArray3[num161], chrArray3[num162], chrArray3[num163], chrArray3[num164], chrArray3[num165], chrArray3[num166], chrArray3[num167], chrArray3[num168], chrArray3[num169], chrArray3[num170], chrArray3[num171], chrArray3[num172], chrArray3[num173], chrArray3[num174], chrArray3[num175], chrArray3[num176], chrArray3[num177], chrArray3[num178], chrArray3[num179], chrArray3[num180], chrArray3[num181], chrArray3[num182] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", "Random-Tokens", ".txt" }));
+                return;
+            }
+            if (Program.selection == "5")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str4 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter4 = new StreamWriter(string.Concat("x", str4, "-Random-Tokens.txt")))
+                {
+                    for (int m = 0; m < Convert.ToInt32(str4); m++)
+                    {
+                        char[] charArray4 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray4 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num183 = Program.r2.Next((int)charArray4.Length);
+                        int num184 = Program.r2.Next((int)charArray4.Length);
+                        int num185 = Program.r2.Next((int)charArray4.Length);
+                        int num186 = Program.r2.Next((int)charArray4.Length);
+                        int num187 = Program.r2.Next((int)charArray4.Length);
+                        int num188 = Program.r2.Next((int)charArray4.Length);
+                        int num189 = Program.r2.Next((int)charArray4.Length);
+                        int num190 = Program.r2.Next((int)charArray4.Length);
+                        int num191 = Program.r2.Next((int)charArray4.Length);
+                        int num192 = Program.r2.Next((int)charArray4.Length);
+                        int num193 = Program.r2.Next((int)charArray4.Length);
+                        int num194 = Program.r2.Next((int)charArray4.Length);
+                        int num195 = Program.r2.Next((int)charArray4.Length);
+                        int num196 = Program.r2.Next((int)charArray4.Length);
+                        int num197 = Program.r2.Next((int)charArray4.Length);
+                        int num198 = Program.r2.Next((int)charArray4.Length);
+                        int num199 = Program.r2.Next((int)charArray4.Length);
+                        int num200 = Program.r2.Next((int)charArray4.Length);
+                        int num201 = Program.r2.Next((int)charArray4.Length);
+                        int num202 = Program.r2.Next((int)chrArray4.Length);
+                        int num203 = Program.r2.Next((int)chrArray4.Length);
+                        int num204 = Program.r2.Next((int)chrArray4.Length);
+                        int num205 = Program.r2.Next((int)chrArray4.Length);
+                        int num206 = Program.r2.Next((int)chrArray4.Length);
+                        int num207 = Program.r2.Next((int)chrArray4.Length);
+                        int num208 = Program.r2.Next((int)chrArray4.Length);
+                        int num209 = Program.r2.Next((int)chrArray4.Length);
+                        int num210 = Program.r2.Next((int)chrArray4.Length);
+                        int num211 = Program.r2.Next((int)chrArray4.Length);
+                        int num212 = Program.r2.Next((int)chrArray4.Length);
+                        int num213 = Program.r2.Next((int)chrArray4.Length);
+                        int num214 = Program.r2.Next((int)chrArray4.Length);
+                        int num215 = Program.r2.Next((int)chrArray4.Length);
+                        int num216 = Program.r2.Next((int)chrArray4.Length);
+                        int num217 = Program.r2.Next((int)chrArray4.Length);
+                        int num218 = Program.r2.Next((int)chrArray4.Length);
+                        int num219 = Program.r2.Next((int)chrArray4.Length);
+                        int num220 = Program.r2.Next((int)chrArray4.Length);
+                        int num221 = Program.r2.Next((int)chrArray4.Length);
+                        int num222 = Program.r2.Next((int)chrArray4.Length);
+                        int num223 = Program.r2.Next((int)chrArray4.Length);
+                        int num224 = Program.r2.Next((int)chrArray4.Length);
+                        int num225 = Program.r2.Next((int)chrArray4.Length);
+                        int num226 = Program.r2.Next((int)chrArray4.Length);
+                        int num227 = Program.r2.Next((int)chrArray4.Length);
+                        int num228 = Program.r2.Next((int)chrArray4.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter4.WriteLine(string.Concat(new object[] { "NTUyODk", charArray4[num183], charArray4[num184], charArray4[num185], charArray4[num186], charArray4[num187], charArray4[num188], charArray4[num189], charArray4[num190], charArray4[num191], charArray4[num192], charArray4[num193], charArray4[num194], charArray4[num195], charArray4[num196], charArray4[num197], charArray4[num198], charArray4[num199], ".D2GO", charArray4[num200], charArray4[num201], ".", chrArray4[num202], chrArray4[num203], chrArray4[num204], chrArray4[num205], chrArray4[num206], chrArray4[num207], chrArray4[num208], chrArray4[num209], chrArray4[num210], chrArray4[num211], chrArray4[num212], chrArray4[num213], chrArray4[num214], chrArray4[num215], chrArray4[num216], chrArray4[num217], chrArray4[num218], chrArray4[num219], chrArray4[num220], chrArray4[num221], chrArray4[num222], chrArray4[num223], chrArray4[num224], chrArray4[num225], chrArray4[num226], chrArray4[num227], chrArray4[num228] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NTUyODk", charArray4[num183], charArray4[num184], charArray4[num185], charArray4[num186], charArray4[num187], charArray4[num188], charArray4[num189], charArray4[num190], charArray4[num191], charArray4[num192], charArray4[num193], charArray4[num194], charArray4[num195], charArray4[num196], charArray4[num197], charArray4[num198], charArray4[num199], ".D2GO", charArray4[num200], charArray4[num201], ".", chrArray4[num202], chrArray4[num203], chrArray4[num204], chrArray4[num205], chrArray4[num206], chrArray4[num207], chrArray4[num208], chrArray4[num209], chrArray4[num210], chrArray4[num211], chrArray4[num212], chrArray4[num213], chrArray4[num214], chrArray4[num215], chrArray4[num216], chrArray4[num217], chrArray4[num218], chrArray4[num219], chrArray4[num220], chrArray4[num221], chrArray4[num222], chrArray4[num223], chrArray4[num224], chrArray4[num225], chrArray4[num226], chrArray4[num227], chrArray4[num228] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", string.Concat("x", str4, "-Random-Tokens.txt"), ".txt" }));
+                return;
+            }
+            if (Program.selection == "6")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str5 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter5 = new StreamWriter(string.Concat("x", str5, "-Random-Tokens.txt")))
+                {
+                    for (int n = 0; n < Convert.ToInt32(str5); n++)
+                    {
+                        char[] charArray5 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray5 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num229 = Program.r2.Next((int)charArray5.Length);
+                        int num230 = Program.r2.Next((int)charArray5.Length);
+                        int num231 = Program.r2.Next((int)charArray5.Length);
+                        int num232 = Program.r2.Next((int)charArray5.Length);
+                        int num233 = Program.r2.Next((int)charArray5.Length);
+                        int num234 = Program.r2.Next((int)charArray5.Length);
+                        int num235 = Program.r2.Next((int)charArray5.Length);
+                        int num236 = Program.r2.Next((int)charArray5.Length);
+                        int num237 = Program.r2.Next((int)charArray5.Length);
+                        int num238 = Program.r2.Next((int)charArray5.Length);
+                        int num239 = Program.r2.Next((int)charArray5.Length);
+                        int num240 = Program.r2.Next((int)charArray5.Length);
+                        int num241 = Program.r2.Next((int)charArray5.Length);
+                        int num242 = Program.r2.Next((int)chrArray5.Length);
+                        int num243 = Program.r2.Next((int)chrArray5.Length);
+                        int num244 = Program.r2.Next((int)chrArray5.Length);
+                        int num245 = Program.r2.Next((int)chrArray5.Length);
+                        int num246 = Program.r2.Next((int)chrArray5.Length);
+                        int num247 = Program.r2.Next((int)chrArray5.Length);
+                        int num248 = Program.r2.Next((int)chrArray5.Length);
+                        int num249 = Program.r2.Next((int)chrArray5.Length);
+                        int num250 = Program.r2.Next((int)chrArray5.Length);
+                        int num251 = Program.r2.Next((int)chrArray5.Length);
+                        int num252 = Program.r2.Next((int)chrArray5.Length);
+                        int num253 = Program.r2.Next((int)chrArray5.Length);
+                        int num254 = Program.r2.Next((int)chrArray5.Length);
+                        int num255 = Program.r2.Next((int)chrArray5.Length);
+                        int num256 = Program.r2.Next((int)chrArray5.Length);
+                        int num257 = Program.r2.Next((int)chrArray5.Length);
+                        int num258 = Program.r2.Next((int)chrArray5.Length);
+                        int num259 = Program.r2.Next((int)chrArray5.Length);
+                        int num260 = Program.r2.Next((int)chrArray5.Length);
+                        int num261 = Program.r2.Next((int)chrArray5.Length);
+                        int num262 = Program.r2.Next((int)chrArray5.Length);
+                        int num263 = Program.r2.Next((int)chrArray5.Length);
+                        int num264 = Program.r2.Next((int)chrArray5.Length);
+                        int num265 = Program.r2.Next((int)chrArray5.Length);
+                        int num266 = Program.r2.Next((int)chrArray5.Length);
+                        int num267 = Program.r2.Next((int)chrArray5.Length);
+                        int num268 = Program.r2.Next((int)chrArray5.Length);
+                        int num269 = Program.r2.Next((int)chrArray5.Length);
+                        int num270 = Program.r2.Next((int)chrArray5.Length);
+                        int num271 = Program.r2.Next((int)chrArray5.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter5.WriteLine(string.Concat(new object[] { "NjM4ODI", charArray5[num229], charArray5[num230], charArray5[num231], charArray5[num232], charArray5[num233], "M", charArray5[num234], charArray5[num235], charArray5[num236], "ND", charArray5[num237], charArray5[num238], "N", charArray5[num239], charArray5[num240], charArray5[num241], ".Xbi", chrArray5[num242], chrArray5[num243], chrArray5[num244], ".", chrArray5[num245], chrArray5[num246], chrArray5[num247], chrArray5[num248], chrArray5[num249], chrArray5[num250], chrArray5[num251], chrArray5[num252], chrArray5[num253], chrArray5[num254], chrArray5[num255], chrArray5[num256], chrArray5[num257], chrArray5[num258], chrArray5[num259], chrArray5[num260], chrArray5[num261], chrArray5[num262], chrArray5[num263], chrArray5[num264], chrArray5[num265], chrArray5[num266], chrArray5[num267], chrArray5[num268], chrArray5[num269], chrArray5[num270], chrArray5[num271] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NjM4ODI", charArray5[num229], charArray5[num230], charArray5[num231], charArray5[num232], charArray5[num233], "M", charArray5[num234], charArray5[num235], charArray5[num236], "ND", charArray5[num237], charArray5[num238], "N", charArray5[num239], charArray5[num240], charArray5[num241], ".Xbi", chrArray5[num242], chrArray5[num243], chrArray5[num244], ".", chrArray5[num245], chrArray5[num246], chrArray5[num247], chrArray5[num248], chrArray5[num249], chrArray5[num250], chrArray5[num251], chrArray5[num252], chrArray5[num253], chrArray5[num254], chrArray5[num255], chrArray5[num256], chrArray5[num257], chrArray5[num258], chrArray5[num259], chrArray5[num260], chrArray5[num261], chrArray5[num262], chrArray5[num263], chrArray5[num264], chrArray5[num265], chrArray5[num266], chrArray5[num267], chrArray5[num268], chrArray5[num269], chrArray5[num270], chrArray5[num271] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", string.Concat("x", str5, "-Random-Tokens.txt"), ".txt" }));
+                return;
+            }
+            if (Program.selection == "7")
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("How many tokens do You want? ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                string str6 = Console.ReadLine();
+                Console.Clear();
+                using (StreamWriter streamWriter6 = new StreamWriter(string.Concat("x", str6, "-Random-Tokens.txt")))
+                {
+                    for (int o = 0; o < Convert.ToInt32(str6); o++)
+                    {
+                        char[] charArray6 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".ToCharArray();
+                        char[] chrArray6 = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".ToCharArray();
+                        int num272 = Program.r2.Next((int)charArray6.Length);
+                        int num273 = Program.r2.Next((int)charArray6.Length);
+                        int num274 = Program.r2.Next((int)charArray6.Length);
+                        int num275 = Program.r2.Next((int)charArray6.Length);
+                        int num276 = Program.r2.Next((int)charArray6.Length);
+                        int num277 = Program.r2.Next((int)charArray6.Length);
+                        int num278 = Program.r2.Next((int)charArray6.Length);
+                        int num279 = Program.r2.Next((int)charArray6.Length);
+                        int num280 = Program.r2.Next((int)charArray6.Length);
+                        int num281 = Program.r2.Next((int)charArray6.Length);
+                        int num282 = Program.r2.Next((int)charArray6.Length);
+                        int num283 = Program.r2.Next((int)charArray6.Length);
+                        int num284 = Program.r2.Next((int)charArray6.Length);
+                        int num285 = Program.r2.Next((int)chrArray6.Length);
+                        int num286 = Program.r2.Next((int)chrArray6.Length);
+                        int num287 = Program.r2.Next((int)chrArray6.Length);
+                        int num288 = Program.r2.Next((int)chrArray6.Length);
+                        int num289 = Program.r2.Next((int)chrArray6.Length);
+                        int num290 = Program.r2.Next((int)chrArray6.Length);
+                        int num291 = Program.r2.Next((int)chrArray6.Length);
+                        int num292 = Program.r2.Next((int)chrArray6.Length);
+                        int num293 = Program.r2.Next((int)chrArray6.Length);
+                        int num294 = Program.r2.Next((int)chrArray6.Length);
+                        int num295 = Program.r2.Next((int)chrArray6.Length);
+                        int num296 = Program.r2.Next((int)chrArray6.Length);
+                        int num297 = Program.r2.Next((int)chrArray6.Length);
+                        int num298 = Program.r2.Next((int)chrArray6.Length);
+                        int num299 = Program.r2.Next((int)chrArray6.Length);
+                        int num300 = Program.r2.Next((int)chrArray6.Length);
+                        int num301 = Program.r2.Next((int)chrArray6.Length);
+                        int num302 = Program.r2.Next((int)chrArray6.Length);
+                        int num303 = Program.r2.Next((int)chrArray6.Length);
+                        int num304 = Program.r2.Next((int)chrArray6.Length);
+                        int num305 = Program.r2.Next((int)chrArray6.Length);
+                        int num306 = Program.r2.Next((int)chrArray6.Length);
+                        int num307 = Program.r2.Next((int)chrArray6.Length);
+                        int num308 = Program.r2.Next((int)chrArray6.Length);
+                        int num309 = Program.r2.Next((int)chrArray6.Length);
+                        int num310 = Program.r2.Next((int)chrArray6.Length);
+                        int num311 = Program.r2.Next((int)chrArray6.Length);
+                        int num312 = Program.r2.Next((int)chrArray6.Length);
+                        int num313 = Program.r2.Next((int)chrArray6.Length);
+                        int num314 = Program.r2.Next((int)chrArray6.Length);
+                        Program.gened++;
+                        Console.Title = string.Concat(new object[] { "DTM|Token Gen - Generated: ", Program.gened });
+                        streamWriter6.WriteLine(string.Concat(new object[] { "NjM4NDE", charArray6[num272], charArray6[num273], charArray6[num274], charArray6[num275], charArray6[num276], "N", charArray6[num277], charArray6[num278], charArray6[num279], "ND", charArray6[num280], charArray6[num281], "N", charArray6[num282], charArray6[num283], charArray6[num284], ".Xbi", chrArray6[num285], chrArray6[num286], chrArray6[num287], ".", chrArray6[num288], chrArray6[num289], chrArray6[num290], chrArray6[num291], chrArray6[num292], chrArray6[num293], chrArray6[num294], chrArray6[num295], chrArray6[num296], chrArray6[num297], chrArray6[num298], chrArray6[num299], chrArray6[num300], chrArray6[num301], chrArray6[num302], chrArray6[num303], chrArray6[num304], chrArray6[num305], chrArray6[num306], chrArray6[num307], chrArray6[num308], chrArray6[num309], chrArray6[num310], chrArray6[num311], chrArray6[num312], chrArray6[num313], chrArray6[num314] }));
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(string.Concat(new object[] { "NjM4NDE", charArray6[num272], charArray6[num273], charArray6[num274], charArray6[num275], charArray6[num276], "N", charArray6[num277], charArray6[num278], charArray6[num279], "ND", charArray6[num280], charArray6[num281], "N", charArray6[num282], charArray6[num283], charArray6[num284], ".Xbi", chrArray6[num285], chrArray6[num286], chrArray6[num287], ".", chrArray6[num288], chrArray6[num289], chrArray6[num290], chrArray6[num291], chrArray6[num292], chrArray6[num293], chrArray6[num294], chrArray6[num295], chrArray6[num296], chrArray6[num297], chrArray6[num298], chrArray6[num299], chrArray6[num300], chrArray6[num301], chrArray6[num302], chrArray6[num303], chrArray6[num304], chrArray6[num305], chrArray6[num306], chrArray6[num307], chrArray6[num308], chrArray6[num309], chrArray6[num310], chrArray6[num311], chrArray6[num312], chrArray6[num313], chrArray6[num314] }));
+                    }
+                }
+                Console.WriteLine("Done Generating!");
+                Console.WriteLine(string.Concat(new string[] { "Saved ", Program.gened.ToString(), " Tokens to: ", string.Concat("x", str6, "-Random-Tokens.txt"), ".txt" }));
+            }
+        }
+
+        public static string RandomString(int length)
+        {
+            return new string((
+                from s in Enumerable.Repeat<string>("0123456789", length)
+                select s[Program.random.Next(s.Length)]).ToArray<char>());
+        }
+
+        [CompilerGenerated]
+        [Serializable]
+        private sealed class <>c
+        {
+            public readonly static Program.<>c <>9;
+
+            public static Func<string, char> <>9__1_0;
+
+            static <>c()
+            {
+                Program.<>c.<>9 = new Program.<>c();
+            }
+
+            public <>c()
+            {
+            }
+
+            internal char <RandomString>b__1_0(string s)
+            {
+                return s[Program.random.Next(s.Length)];
+            }
+        }
+    }
+}
