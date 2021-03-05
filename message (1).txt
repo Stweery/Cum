@@ -264,7 +264,7 @@ namespace Checker_v1
                 Console.Write("How many tokens do You want? ");
                 Console.ForegroundColor = ConsoleColor.Red;
                 string str3 = Console.ReadLine();
-                Console.Clear();
+                Console.Clear(); m
                 using (StreamWriter streamWriter3 = new StreamWriter(string.Concat("x", str3, "-Random-Tokens.txt")))
                 {
                     for (int l = 0; l < Convert.ToInt32(str3); l++)
